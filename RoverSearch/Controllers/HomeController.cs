@@ -29,7 +29,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();
+        return Redirect("/images/rickroll.webm");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
