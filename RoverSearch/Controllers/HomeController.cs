@@ -19,6 +19,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    public IActionResult Reader()
+    {
+        return View();
+    }
 
     public IActionResult Search(string query)
     {
@@ -29,7 +34,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();
+        return Redirect("/images/rickroll.webm");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
