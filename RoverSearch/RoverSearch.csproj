@@ -10,12 +10,6 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="..\..\..\..\Pictures\Images\favicon.ico">
-      <Link>wwwroot\favicon.ico</Link>
-    </Content>
-  </ItemGroup>
-
 <Target Name="CopyResources" AfterTargets="Build">
 	<ItemGroup>
 		<ResourceFiles Include="Data\**\*" />
